@@ -1,0 +1,29 @@
+.prices {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px rgb(216, 216, 216);
+}
+@media screen and (max-width: 502px){
+
+    .prices {
+        margin-top: 100px;
+        gap: 10px;
+    }
+    .price {
+        width: 80%;
+    }
+}
