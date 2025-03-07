@@ -1,0 +1,46 @@
+.fases {
+    width: 100%;
+    height: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fases .fases-2 {
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 20px;
+    width: 80%;
+    padding: 20;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 2px rgb(216, 216, 216);
+    text-align: center;
+}
+
+.fase {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+@media screen and (max-width:500px) {
+
+    .fases .fases-2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+}

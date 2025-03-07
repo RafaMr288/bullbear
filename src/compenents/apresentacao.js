@@ -63,10 +63,10 @@ function Apresentacao() {
       <div className="apresentacao-2">
         <h2>BullBear Swap Presentation</h2>
         <p>
-        BullBear Swap emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
+        BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
         </p>
         <h2>TOTAL SUPPLY</h2>
-        <p>100.000.000.000</p>
+        <p>100B</p>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
       </div>
     </div>
