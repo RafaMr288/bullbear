@@ -3,7 +3,7 @@ import "./fases.css"
 function Fases() {
 
     return (
-        <div className="fases">
+        <div className="fases" id="phases">
             <div className="fases-2">
                 <div className="fase">
                     <h2>Phase 1. Initial Expansion and Community Engagement</h2>
@@ -28,6 +28,18 @@ function Fases() {
                     <p>Objective: Reach a market cap of 5MM</p>
                     <p>Development of BullBear Wallet, ensuring greater security and asset control</p>
                     <p>Expansion of the ecosystem with new features to establish BullBear Swap as a reference in the crypto market</p>
+                </div>
+                <div className="fase">
+                    <h2>Phase 5. ?</h2>
+                    <h2>Phase 7. ?</h2>
+                    <h2>Phase 9. ?</h2>
+                    <h2>Phase 11. ?</h2>
+                </div>
+                <div className="fase">
+                    <h2>Phase 6. ?</h2>
+                    <h2>Phase 8. ?</h2>
+                    <h2>Phase 10. ?</h2>
+                    <h2>Phase 12. ? ...</h2>
                 </div>
                 <h2>BullBear</h2>
                 <p>BullBear is more than just a cryptocurrency; it's a movement to transform the way we trade and interact with digital assets. Join this revolution and help shape the future of finance with us!</p>

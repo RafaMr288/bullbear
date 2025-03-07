@@ -29,11 +29,11 @@ function Apresentacao() {
             type: "pie",
             radius: "50%",
             data: [
-              { value: 60, name: "Public Distribution" },
-              { value: 20, name: "Reservation" },
-              { value: 12, name: "Expansion" },
-              { value: 5, name: "Rewards" },
-              { value: 3, name: "Marketing" },
+              { value: 60, name: "Public Distribution %" },
+              { value: 20, name: "Reservation %" },
+              { value: 12, name: "Expansion %" },
+              { value: 5, name: "Rewards %" },
+              { value: 3, name: "Marketing %" },
             ],
             emphasis: {
               itemStyle: {
@@ -59,9 +59,9 @@ function Apresentacao() {
   }, []);
 
   return (
-    <div className="apresentacao">
-      <div className="apresentacao-2">
-        <h2>BullBear Swap Presentation</h2>
+    <div className="apresentacao" id="tokenomics">
+      <div className="apresentacao-2" id="tokenomics">
+        <h2>$BullBear Token Presentation</h2>
         <p>
         BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
         </p>

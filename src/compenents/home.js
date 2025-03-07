@@ -14,9 +14,10 @@ function Header() {
                 ☰
             </button>
             <nav className={`header-menu ${menuOpen ? "open" : ""}`}>
-                <a href="#">ROADMAP</a>
-                <a href="#">TOKENOMICS</a>
-                <a href="#">HOME</a>
+                <a href="#phases">Phases</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#criptos">Criptos</a>
+                <a href="#">Home</a>
             </nav>
         </header>
     );

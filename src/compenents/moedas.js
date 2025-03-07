@@ -25,7 +25,7 @@ function Moedas() {
     const [dados, setDados] = useState(null)
 
     return(
-        <div className="moedas">
+        <div className="moedas" id="criptos">
             {dados ? (
                 <div className="moeda">
                     <tbody>
@@ -45,7 +45,7 @@ function Moedas() {
                                 </td>
                                 <td>{coin.name}</td>
                                 <td>{coin.symbol.toUpperCase()}</td>
-                                <td>${coin.current_price.toLocaleString()}</td>
+                                <td>${coin.current_price}</td>
                                 <td>${coin.market_cap.toLocaleString()}</td>
                             </tr>
                         ))}
