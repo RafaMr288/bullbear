@@ -4,6 +4,7 @@ function Fases() {
 
     return (
         <div className="fases" id="phases">
+            <h1>Phases</h1>
             <div className="fases-2">
                 <div className="fase">
                     <h2>Phase 1. Initial Expansion and Community Engagement</h2>
@@ -41,7 +42,6 @@ function Fases() {
                     <h2>Phase 10. ?</h2>
                     <h2>Phase 12. ? ...</h2>
                 </div>
-                <h2>BullBear</h2>
                 <p>BullBear is more than just a cryptocurrency; it's a movement to transform the way we trade and interact with digital assets. Join this revolution and help shape the future of finance with us!</p>
             </div>
         </div>

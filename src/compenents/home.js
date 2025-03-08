@@ -14,10 +14,10 @@ function Header() {
                 ☰
             </button>
             <nav className={`header-menu ${menuOpen ? "open" : ""}`}>
-                <a href="#phases">Phases</a>
-                <a href="#tokenomics">Tokenomics</a>
-                <a href="#criptos">Criptos</a>
-                <a href="#">Home</a>
+                <a href="#phases" onClick={() => setMenuOpen(!menuOpen)}>Phases</a>
+                <a href="#tokenomics" onClick={() => setMenuOpen(!menuOpen)}>Tokenomics</a>
+                <a href="#criptos" onClick={() => setMenuOpen(!menuOpen)}>Criptos</a>
+                <a href="#" onClick={() => setMenuOpen(!menuOpen)}>Home</a>
             </nav>
         </header>
     );

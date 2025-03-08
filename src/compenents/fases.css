@@ -1,47 +1,53 @@
 .fases {
-    width: 100%;
-    height: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url("../imgs/planofundo3.png");
+    color: #fff;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 1px 3px 2px rgb(30, 30, 37);
+    background-repeat: no-repeat;
+    background-size: auto 100% 100%;
 }
 
-.fases .fases-2 {
-    border-radius: 10px;
-    max-width: 800px;
-    padding: 20px;
-    width: 80%;
-    padding: 20;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+.fases h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.fases-2 {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 1px 1px 4px 2px rgb(216, 216, 216);
-    text-align: center;
+    gap: 20px;
 }
 
 .fase {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(194, 194, 194);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
 }
 
-@media screen and (max-width:500px) {
+.fase:hover {
+    transform: translateY(-5px);
+}
 
-    .fases .fases-2 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 50px;
+.fase h2 {
+    font-size: 1.4rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.fase p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .fase {
+        max-width: 90%;
     }
-
 }

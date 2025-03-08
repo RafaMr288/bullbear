@@ -9,41 +9,50 @@ function Apresentacao() {
       var myChart = echarts.init(chartDom);
 
       const option = {
-        title: {
-          text: "TOKENOMICS",
-          left: "center",
-        },
         tooltip: {
-          trigger: "item",
+          trigger: 'item',
         },
         legend: {
-            top: 30,
-            left: "left",
-            textAlign: "center",    
-            orient: 'horizontal' ,
-            align: 'auto' ,
+          top: '5%',
+          left: 'center',
+          textStyle:{
+            color: "rgba(255,255,255,1)"
+          }
         },
         series: [
           {
-            name: "ECONOMY",
-            type: "pie",
-            radius: "50%",
-            data: [
-              { value: 60, name: "Public Distribution %" },
-              { value: 20, name: "Reservation %" },
-              { value: 12, name: "Expansion %" },
-              { value: 5, name: "Rewards %" },
-              { value: 3, name: "Marketing %" },
-            ],
-            emphasis: {
-              itemStyle: {
-                shadowBlur: 10,
-                shadowOffsetX: 0,
-                shadowColor: "rgba(0, 0, 0, 0.5)",
-              },
+            name: 'Access From',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            padAngle: 5,
+            itemStyle: {
+              borderRadius: 10
             },
-          },
-        ],
+            label: {
+              color: 'rgba(255, 255, 255, 1)',
+              show: false,
+              position: 'center'
+            },
+            emphasis: {
+              label: {
+                show: true,
+                fontSize: 40,
+                fontWeight: 'bold'
+              }
+            },
+            labelLine: {
+              show: false
+            },
+            data: [
+              { value: 60, name: 'Public Distribuition %' },
+              { value: 20, name: 'Reservation %' },
+              { value: 12, name: 'Expasion %' },
+              { value: 5, name: 'Rewards %' },
+              { value: 3, name: 'Marketing %' }
+            ]
+          }
+        ]
       };
 
       myChart.setOption(option);
@@ -65,7 +74,7 @@ function Apresentacao() {
         <p>
         BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
         </p>
-        <h2>TOTAL SUPPLY</h2>
+        <h2>MAX SUPPLY</h2>
         <p>100B</p>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
       </div>

@@ -7,7 +7,11 @@
 
 body {
     width: 100%;
-    background: linear-gradient(135deg, #deffd2, #ffffff, #ffbdbd);
+    background: white;
+    background-image: url('./imgs/planofundo.png');
+    background-position: center top; 
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 .app {
     width: 100%;

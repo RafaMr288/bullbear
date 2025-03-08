@@ -12,11 +12,23 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-color: rgba(255, 255, 255, 0.644);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 4px 2px rgb(216, 216, 216);
+    color: white;
+    border: 1px solid rgb(85, 85, 85);
+    animation: price 1s 1;
 }
+@keyframes price {
+
+    0% {
+        margin-top: 1000px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+
+}
+
 @media screen and (max-width: 502px){
 
     .prices {
