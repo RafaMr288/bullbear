@@ -32,15 +32,9 @@ function Fases() {
                 </div>
                 <div className="fase">
                     <h2>Phase 5. ?</h2>
-                    <h2>Phase 7. ?</h2>
-                    <h2>Phase 9. ?</h2>
-                    <h2>Phase 11. ?</h2>
-                </div>
-                <div className="fase">
                     <h2>Phase 6. ?</h2>
-                    <h2>Phase 8. ?</h2>
-                    <h2>Phase 10. ?</h2>
-                    <h2>Phase 12. ? ...</h2>
+                    <h2>Phase 7. ?</h2>
+                    <h2>...</h2>
                 </div>
                 <p>BullBear is more than just a cryptocurrency; it's a movement to transform the way we trade and interact with digital assets. Join this revolution and help shape the future of finance with us!</p>
             </div>

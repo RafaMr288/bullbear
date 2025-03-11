@@ -5,13 +5,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    color: white;
+    text-shadow: -1px -1px 0 black,  
+               1px -1px 0 black,  
+              -1px  1px 0 black,  
+               1px  1px 0 black; 
+}
+
 body {
     width: 100%;
     background: white;
-    background-image: url('./imgs/planofundo.png');
-    background-position: center top; 
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+    background-image: url('./imgs/fundo4.jpg');
+    background-size: cover; /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Mantém fixa ao rolar (opcional) */
 }
 .app {
     width: 100%;

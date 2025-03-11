@@ -1,0 +1,30 @@
+h3 {
+    color: rgb(252, 252, 252);
+}
+
+.redes {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.rede {
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgba(133, 133, 133, 0.452);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.rede:hover {
+    transform: translateY(-10px);
+}

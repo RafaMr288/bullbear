@@ -45,11 +45,11 @@ function Apresentacao() {
               show: false
             },
             data: [
-              { value: 60, name: 'Public Distribuition %' },
-              { value: 20, name: 'Reservation %' },
-              { value: 12, name: 'Expasion %' },
-              { value: 5, name: 'Rewards %' },
-              { value: 3, name: 'Marketing %' }
+              { value: 60, name: 'Public Distribuition 60%' },
+              { value: 18, name: 'Reservation 18%' },
+              { value: 12, name: 'Expasion 12%' },
+              { value: 5, name: 'Rewards 5%' },
+              { value: 5, name: 'Marketing 5%' }
             ]
           }
         ]

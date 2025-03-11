@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css"
 import Header from "./compenents/home.js"
 import Prices from "./compenents/prices.js";
@@ -6,15 +6,26 @@ import Apresentacao from "./compenents/apresentacao.js";
 import Footer from "./compenents/footer.js";
 import Fases from "./compenents/fases.js";
 import Moedas from "./compenents/moedas.js";
+import Redes from "./compenents/redes.js";
+import Futures from "./compenents/furures.js";
 
 function App() {
+  
+  const [moedasData, setMoedasData] = useState(null); // Define o estado
+
+  useEffect(()=>{
+    console.log(moedasData)
+  }, 1000)
+
   return (
     <div className="app">
       <Header></Header>
-      <Prices></Prices>
+      <Prices dados={moedasData}></Prices>
       <Apresentacao></Apresentacao>
+      <Futures></Futures>
       <Fases></Fases>
-      <Moedas></Moedas>
+      <Redes></Redes>
+      <Moedas setMoedasData={setMoedasData} ></Moedas>
       <Footer></Footer>
     </div>
   );

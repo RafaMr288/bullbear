@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./home.css";
+import Img_logo from "../imgs/logo.jpg"
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -7,6 +8,7 @@ function Header() {
     return (
         <header>
             <div className="header-logo">
+                <img src={Img_logo} width='30' height='30' style={{borderRadius:"50%"}}></img>
                 <h1>Bull</h1>
                 <h1>Bear</h1>
             </div>

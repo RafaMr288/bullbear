@@ -1,10 +1,7 @@
 .fases {
     text-align: center;
     padding: 40px 20px;
-    background-image: url("../imgs/planofundo3.png");
-    color: #fff;
-    border-bottom: 1px solid black;
-    box-shadow: 1px 1px 3px 2px rgb(30, 30, 37);
+    color: rgba(185, 185, 185, 0.918);
     background-repeat: no-repeat;
     background-size: auto 100% 100%;
 }

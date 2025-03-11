@@ -17,7 +17,13 @@
     color: white;
     border: 1px solid rgb(85, 85, 85);
     animation: price 1s 1;
+    transition: 0.5s;
 }
+
+.price:hover {
+    transform: translateY(-5px);
+}
+
 @keyframes price {
 
     0% {
