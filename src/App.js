@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./style.css"
 import Header from "./compenents/home.js"
 import Prices from "./compenents/prices.js";
@@ -12,10 +12,6 @@ import Futures from "./compenents/furures.js";
 function App() {
   
   const [moedasData, setMoedasData] = useState(null); // Define o estado
-
-  useEffect(()=>{
-    console.log(moedasData)
-  }, 1000)
 
   return (
     <div className="app">
