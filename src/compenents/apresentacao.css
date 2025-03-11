@@ -32,3 +32,10 @@
 .apresentacao-2:hover h2{
     font-size: 30px;
 }
+
+@media screen and (max-width:700px) {
+    .apresentacao-2 {
+        border: none;
+        width: 100%;
+    }
+}

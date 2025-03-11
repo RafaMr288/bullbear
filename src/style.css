@@ -15,12 +15,6 @@ p {
 
 body {
     width: 100%;
-    background: white;
-    background-image: url('./imgs/fundo4.jpg');
-    background-size: cover; /* Cobre toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição */
-    background-attachment: fixed; /* Mantém fixa ao rolar (opcional) */
 }
 .app {
     width: 100%;
@@ -28,4 +22,31 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-image: url('./imgs/fundo4.jpg');
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: cover;
+        background: rgba(0, 0, 0, 0.5); /* Ajuste o valor da opacidade */
+        z-index: -1;
+    }
+
+}
+
+.app {
+    background: white;
+    background-image: url('./imgs/fundo4.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./imgs/fundo4.jpg');
+    background-size: cover; /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Mantém fixa ao rolar (opcional) */
 }

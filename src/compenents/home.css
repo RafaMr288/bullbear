@@ -80,7 +80,7 @@ header {
     background: none;
     border: none;
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(223, 223, 223);
     cursor: pointer;
     transition: 0.5s;
 }
