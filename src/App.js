@@ -8,6 +8,7 @@ import Fases from "./compenents/fases.js";
 import Moedas from "./compenents/moedas.js";
 import Redes from "./compenents/redes.js";
 import Futures from "./compenents/furures.js";
+import Howbuy from "./compenents/howbuy.js";
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
       <Futures></Futures>
       <Fases></Fases>
       <Redes></Redes>
+      <Howbuy></Howbuy>
       <Moedas setMoedasData={setMoedasData} ></Moedas>
       <Footer></Footer>
     </div>

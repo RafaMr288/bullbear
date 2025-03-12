@@ -51,6 +51,10 @@ body {
     background-attachment: fixed; /* Mantém fixa ao rolar (opcional) */
 }
 
+* {
+    user-select: none;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .app {
         background-size: cover; /* Garante que a imagem cubra toda a tela */

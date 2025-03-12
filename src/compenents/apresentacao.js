@@ -77,6 +77,8 @@ function Apresentacao() {
         <h2>MAX SUPPLY</h2>
         <p>100B</p>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
+        <h2 id="burn">Burn System</h2>
+        <p>BullBear has an innovative token burn project! Every week, 1% of all transactions will be burned, reducing the total supply and increasing the asset's scarcity. This mechanism aims to boost the token's long-term value and benefit the community.</p>
       </div>
     </div>
   );
