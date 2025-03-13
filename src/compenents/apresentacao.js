@@ -45,7 +45,7 @@ function Apresentacao() {
         },
         series: [
           {
-            name: 'Access From',
+            name: 'BullBear',
             type: 'pie',
             radius: ['40%', '70%'],
             avoidLabelOverlap: false,
