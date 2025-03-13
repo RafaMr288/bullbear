@@ -9,6 +9,7 @@ import Moedas from "./compenents/moedas.js";
 import Redes from "./compenents/redes.js";
 import Futures from "./compenents/furures.js";
 import Howbuy from "./compenents/howbuy.js";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
       <Howbuy></Howbuy>
       <Moedas setMoedasData={setMoedasData} ></Moedas>
       <Footer></Footer>
+      <Analytics></Analytics>
     </div>
   );
 }
