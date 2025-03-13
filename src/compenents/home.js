@@ -8,6 +8,7 @@ function Header() {
     return (
         <header>
             <div className="header-logo">
+                <img src={Img_logo} width='30' height='30' style={{borderRadius:"100%"}}></img>
                 <h1>BullBear</h1>
             </div>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
