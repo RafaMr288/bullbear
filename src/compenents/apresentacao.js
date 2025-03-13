@@ -1,9 +1,32 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import * as echarts from "echarts";
 import Img_logo from "../imgs/logo.png"
 import "./apresentacao.css";
+import { db, ref, get, set, onValue } from "./firebaseConfig";
 
 function Apresentacao() {
+
+  const [clicks, setClicks] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const clickRef = ref(db, "clicks");
+
+    // Atualiza em tempo real
+    onValue(clickRef, (snapshot) => {
+      if (snapshot.exists()) {
+        setClicks(snapshot.val());
+      }
+    });
+  }, []);
+
+  const handleClick = async () => {
+    const clickRef = ref(db, "clicks");
+    const snapshot = await get(clickRef);
+    const newClicks = (snapshot.exists() ? snapshot.val() : 0) + 1;
+    await set(clickRef, newClicks);
+  };
+
   useEffect(() => {
     var chartDom = document.getElementById("main");
     if (chartDom) {
@@ -70,7 +93,22 @@ function Apresentacao() {
 
   return (
     <div className="apresentacao" id="tokenomics">
+
       <div className="apresentacao-2" id="tokenomics">
+        <div className="like">
+          <h1>Project Likes: {clicks}</h1>
+          {visible && (
+        <button
+          onClick={() => {
+            setVisible(false)
+            handleClick()
+          }}
+          className=""
+        >
+          Porject Like
+        </button>
+      )}
+        </div>
         <img src={Img_logo} width='80px'></img>
         <h2>$BullBear Token Presentation</h2>
         <p>

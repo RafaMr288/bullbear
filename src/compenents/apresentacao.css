@@ -56,3 +56,30 @@
         transform:  rotate(360deg);
     }
 }
+
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.like button {
+    border: none;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.like button:hover {
+    background-color: white;
+    color: black;
+}
