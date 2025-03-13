@@ -109,6 +109,9 @@ function Apresentacao() {
         </button>
       )}
         </div>
+        <div className="token">
+          <p>launch</p>
+        </div>
         <img src={Img_logo} width='80px'></img>
         <h2>$BullBear Token Presentation</h2>
         <p>
