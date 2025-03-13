@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./home.css";
-import Img_logo from "../imgs/logo.png"
+import Img_logo from "../imgs/logo-2.png"
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -8,8 +8,7 @@ function Header() {
     return (
         <header>
             <div className="header-logo">
-                <img src={Img_logo} width='30' height='30' style={{borderRadius:"100%"}}></img>
-                <h1>BullBear</h1>
+                <img src={Img_logo} width='140' height='40' style={{borderRadius:"0"}}></img>
             </div>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
                 ☰
