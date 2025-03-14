@@ -1,10 +1,10 @@
-import "./fases.css"
+import "./roadmap.css"
 
-function Fases() {
+function Roadmap() {
 
     return (
-        <div className="fases" id="phases">
-            <h1>Phases</h1>
+        <div className="fases" id="roadmap">
+            <h1>Roadmap</h1>
             <div className="fases-2">
                 <div className="fase">
                     <h2>Phase 1. Initial Expansion and Community Engagement</h2>
@@ -44,4 +44,4 @@ function Fases() {
 
 }
 
-export default Fases
+export default Roadmap

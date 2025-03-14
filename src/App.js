@@ -4,12 +4,13 @@ import Header from "./compenents/home.js"
 import Prices from "./compenents/prices.js";
 import Apresentacao from "./compenents/apresentacao.js";
 import Footer from "./compenents/footer.js";
-import Fases from "./compenents/fases.js";
+import Roadmap from "./compenents/roadmap.js";
 import Moedas from "./compenents/moedas.js";
 import Redes from "./compenents/redes.js";
 import Futures from "./compenents/furures.js";
 import Howbuy from "./compenents/howbuy.js";
 import { Analytics } from '@vercel/analytics/react';
+import PerguntasF from "./compenents/perguntasf.js";
 
 function App() {
   
@@ -21,8 +22,9 @@ function App() {
       <Prices dados={moedasData}></Prices>
       <Apresentacao></Apresentacao>
       <Futures></Futures>
-      <Fases></Fases>
+      <Roadmap></Roadmap>
       <Redes></Redes>
+      <PerguntasF></PerguntasF>
       <Howbuy></Howbuy>
       <Moedas setMoedasData={setMoedasData} ></Moedas>
       <Footer></Footer>

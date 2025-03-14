@@ -14,7 +14,7 @@ function Header() {
                 ☰
             </button>
             <nav className={`header-menu ${menuOpen ? "open" : ""}`}>
-                <a href="#phases" onClick={() => setMenuOpen(!menuOpen)}>Phases</a>
+                <a href="#roadmap" onClick={() => setMenuOpen(!menuOpen)}>Roadmap</a>
                 <a href="#tokenomics" onClick={() => setMenuOpen(!menuOpen)}>Tokenomics</a>
                 <a href="#criptos" onClick={() => setMenuOpen(!menuOpen)}>Criptos</a>
                 <a href="#burn" onClick={() => setMenuOpen(!menuOpen)}>Burn</a>
