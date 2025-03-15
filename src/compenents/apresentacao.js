@@ -91,6 +91,15 @@ function Apresentacao() {
     }
   }, []);
 
+  const [disponibleS, setdisponibles] = useState(null)
+
+  function disponible() {
+    setdisponibles(true)
+    setTimeout(() => {
+      setdisponibles(false)
+    }, 3500);
+  }
+
   return (
     <div className="apresentacao" id="tokenomics">
 
@@ -110,7 +119,13 @@ function Apresentacao() {
       )}
         </div>
         <div className="token">
-          <p>launch</p>
+          <p className="address">ADDRESS: launch</p>
+          <button onClick={()=>{disponible()}}>COPY IN LAUNCH</button>
+          {disponibleS ? (
+            <p style={{width:"100%"}}>available at launch</p>
+          ): (
+            <></>
+          )}
         </div>
         <img src={Img_logo} width='80px'></img>
         <h2>$BullBear Token Presentation</h2>
