@@ -11,6 +11,7 @@ import Futures from "./compenents/furures.js";
 import Howbuy from "./compenents/howbuy.js";
 import { Analytics } from '@vercel/analytics/react';
 import PerguntasF from "./compenents/perguntasf.js";
+import Grafico from "./compenents/grafico.js";
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
       <Prices dados={moedasData}></Prices>
       <Apresentacao></Apresentacao>
       <Futures></Futures>
+      <Grafico></Grafico>
       <Roadmap></Roadmap>
       <Redes></Redes>
       <PerguntasF></PerguntasF>
