@@ -17,7 +17,7 @@
 .howbuy h1 {
     color: #d6d2d2; /* Azul claro */
     font-weight: bold;
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -53,10 +53,9 @@
 
 .howbuy div div h3 {
     color: #333; /* Cor mais suave para o título */
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
-
 .howbuy div div p {
     all: unset;
     color: #555;

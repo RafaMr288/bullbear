@@ -45,7 +45,11 @@
   }
   .faq-item button {
     background-color: #0a0a0a00;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     border: none;
+  }
+
+  .faq-item h3 {
+    font-size: 20px;
   }
