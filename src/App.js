@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="app">
       <Header></Header>
-      <Redes></Redes>
       <Prices dados={moedasData}></Prices>
+      <Redes></Redes>
       <Apresentacao></Apresentacao>
       <Futures></Futures>
       <Grafico></Grafico>
