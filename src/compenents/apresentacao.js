@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import * as echarts from "echarts";
 import Img_logo from "../imgs/logo.png"
 import "./apresentacao.css";
+import Img_dolar from "../imgs/dolar.png"
+import Img_tax from "../imgs/taxa.png"
 
 function Apresentacao() {
 
@@ -82,17 +84,19 @@ function Apresentacao() {
     <div className="apresentacao" id="tokenomics">
 
       <div className="apresentacao-2" id="tokenomics">
-        <img src={Img_logo} width='80px'></img>
+        <img src={Img_logo} width='80px' className="logo"></img>
         <h2>$BullBear Token Presentation</h2>
         <p>
         BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
         </p>
         <div className="caixa">
           <div className="caixa-2">
+            <img src={Img_dolar} width="40"></img>
             <h2>MAX SUPPLY</h2>
             <p>100B</p>
           </div>
           <div className="caixa-2">
+            <img src={Img_tax} width='40'></img>
             <h2>TAX</h2>
             <p>BUY 0/0 SELL</p>
           </div>
