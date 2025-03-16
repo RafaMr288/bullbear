@@ -13,6 +13,7 @@ import { Analytics } from '@vercel/analytics/react';
 import PerguntasF from "./compenents/perguntasf.js";
 import Grafico from "./compenents/grafico.js";
 import Burn from "./compenents/burn.js";
+import Whitepaper from "./compenents/whitepaper.js";
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
       <Howbuy></Howbuy>
       <Burn></Burn>
       <PerguntasF></PerguntasF>
+      <Whitepaper></Whitepaper>
       <Moedas setMoedasData={setMoedasData} ></Moedas>
       <Footer></Footer>
       <Analytics></Analytics>

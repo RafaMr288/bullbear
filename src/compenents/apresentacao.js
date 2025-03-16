@@ -4,6 +4,7 @@ import Img_logo from "../imgs/logo.png"
 import "./apresentacao.css";
 import Img_dolar from "../imgs/dolar.png"
 import Img_tax from "../imgs/taxa.png"
+import Img_contract from "../imgs/contrato.png"
 
 function Apresentacao() {
 
@@ -103,6 +104,7 @@ function Apresentacao() {
         </div>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
         <div className="token">
+          <img src={Img_contract} width='40'></img>
           <p className="address">CONTRACT: launch</p>
           <button onClick={()=>{disponible()}}>COPY IN LAUNCH</button>
           {disponibleS ? (
