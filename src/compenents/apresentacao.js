@@ -2,30 +2,8 @@ import { useEffect, useState } from "react";
 import * as echarts from "echarts";
 import Img_logo from "../imgs/logo.png"
 import "./apresentacao.css";
-import { db, ref, get, set, onValue } from "./firebaseConfig";
 
 function Apresentacao() {
-
-  const [clicks, setClicks] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const clickRef = ref(db, "clicks");
-
-    // Atualiza em tempo real
-    onValue(clickRef, (snapshot) => {
-      if (snapshot.exists()) {
-        setClicks(snapshot.val());
-      }
-    });
-  }, []);
-
-  const handleClick = async () => {
-    const clickRef = ref(db, "clicks");
-    const snapshot = await get(clickRef);
-    const newClicks = (snapshot.exists() ? snapshot.val() : 0) + 1;
-    await set(clickRef, newClicks);
-  };
 
   useEffect(() => {
     var chartDom = document.getElementById("main");
@@ -104,21 +82,6 @@ function Apresentacao() {
     <div className="apresentacao" id="tokenomics">
 
       <div className="apresentacao-2" id="tokenomics">
-        <div className="like">
-          <h1>Project Likes: {clicks}</h1>
-          {visible && (
-        <button
-          onClick={() => {
-            setVisible(false)
-            handleClick()
-          }}
-          className=""
-        >
-          Project Like
-        </button>
-      )}
-        </div>
-        
         <img src={Img_logo} width='80px'></img>
         <h2>$BullBear Token Presentation</h2>
         <p>
@@ -127,10 +90,8 @@ function Apresentacao() {
         <h2>MAX SUPPLY</h2>
         <p>100B</p>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
-        <h2 id="burn">Burn System</h2>
-        <p>BullBear has an innovative token burn project! Every week, 1% of all transactions will be burned, reducing the total supply and increasing the asset's scarcity. This mechanism aims to boost the token's long-term value and benefit the community.</p>
         <div className="token">
-          <p className="address">ADDRESS: launch</p>
+          <p className="address">CONTRACT: launch</p>
           <button onClick={()=>{disponible()}}>COPY IN LAUNCH</button>
           {disponibleS ? (
             <p style={{width:"100%"}}>available at launch</p>
