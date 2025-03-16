@@ -87,8 +87,16 @@ function Apresentacao() {
         <p>
         BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
         </p>
-        <h2>MAX SUPPLY</h2>
-        <p>100B</p>
+        <div className="caixa">
+          <div className="caixa-2">
+            <h2>MAX SUPPLY</h2>
+            <p>100B</p>
+          </div>
+          <div className="caixa-2">
+            <h2>TAX</h2>
+            <p>BUY 0/0 SELL</p>
+          </div>
+        </div>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
         <div className="token">
           <p className="address">CONTRACT: launch</p>
