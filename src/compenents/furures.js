@@ -12,7 +12,7 @@ function Futures() {
         <div className="futures">
             <h1>Futures Exchanges Confirmed</h1>
             <img src={Img_dex_s}></img>
-            <img src={Img_bullx} onClick={()=>{Header("https://bullx.io/")}}></img>
+            <img src={Img_bullx}></img>
             <img src={Img_okx}></img>
             <img src={Img_orca}></img>
         </div>

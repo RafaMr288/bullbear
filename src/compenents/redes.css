@@ -1,30 +1,54 @@
-h3 {
-    color: rgb(252, 252, 252);
-}
-
+/* Estilo da seção Redes */
 .redes {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.rede {
-    width: 200px;
-    padding: 10px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .rede {
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding: 15px 25px;
+    background: #d4d4d434;
     border-radius: 10px;
-    background-color: rgba(133, 133, 133, 0.452);
-    transition: 0.5s;
     cursor: pointer;
-}
-.rede:hover {
-    transform: translateY(-10px);
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .rede:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 173, 238, 0.7);
+  }
+  
+  .rede img {
+    width: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .rede h3 {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 768px) {
+    .redes {
+      padding: 20px;
+    }
+  
+    .rede {
+      padding: 10px 15px;
+    }
+  
+    .rede img {
+      width: 30px;
+    }
+  
+    .rede h3 {
+      font-size: 1rem;
+    }
+  }

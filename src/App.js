@@ -16,7 +16,6 @@ import Grafico from "./compenents/grafico";
 import Burn from "./compenents/burn";
 import Whitepaper from "./compenents/whitepaper";
 import Game from "./compenents/game/game.js"
-import Whitepaperpdf from "./compenents/whitepaperpdf.js";
 
 function HomePage({ moedasData, setMoedasData }) {
   return (
@@ -44,9 +43,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage moedasData={moedasData} setMoedasData={setMoedasData} />} />
-      <Route path="/whitepaper" element={<Whitepaperpdf />} /> {/* Nova rota do jogo */}
-    </Routes>
+      <Route path="/" element={<HomePage moedasData={moedasData} setMoedasData={setMoedasData} />} />    </Routes>
   );
 }
 

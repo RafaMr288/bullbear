@@ -1,50 +1,140 @@
+/* Container principal */
 .fases {
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .fases h1 {
     text-align: center;
-    padding: 40px 20px;
-    color: rgba(185, 185, 185, 0.918);
-    background-repeat: no-repeat;
-    background-size: auto 100% 100%;
-}
-
-.fases h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.fases-2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #dfdfdf;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Container para as fases */
+  .fases-2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.fase {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 400px;
-    width: 100%;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.fase:hover {
-    transform: translateY(-5px);
-}
-
-.fase h2 {
-    font-size: 1.4rem;
-    color: #ffcc00;
-    margin-bottom: 10px;
-}
-
-.fase p {
+    justify-content: space-around;
+  }
+  
+  /* Estilo das fases */
+  .fase {
+    background: #28282838;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 15px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fase:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fase h2 {
+    font-size: 1.8rem;
+    color: #e7e7e7;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .fase p {
     font-size: 1rem;
+    margin-bottom: 10px;
     line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .fase {
-        max-width: 90%;
+    color: #b3b3b3;
+    transition: color 0.3s ease;
+  }
+  
+  .fase p:hover {
+    color: #fff;
+  }
+  
+  .fase h2,
+  .fase p {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Efeito de Fade-In */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
     }
-}
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo do parágrafo final */
+  .fases p:last-of-type {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fadd3a;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @media (max-width: 1024px) {
+    .fases h1 {
+      font-size: 2.5rem;
+    }
+  
+    .fase {
+      width: 45%;  /* Duas fases por linha em telas menores */
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fases h1 {
+      font-size: 2rem;
+    }
+  
+    .fase {
+      width: 100%; /* Uma fase por linha em telas pequenas */
+      margin-bottom: 20px;
+    }
+  
+    .fases p:last-of-type {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fases h1 {
+      font-size: 1.8rem;
+    }
+  
+    .fase h2 {
+      font-size: 1.5rem;
+    }
+  
+    .fase p {
+      font-size: 0.9rem;
+    }
+  }
