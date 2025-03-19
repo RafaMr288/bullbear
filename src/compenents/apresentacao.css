@@ -6,6 +6,7 @@
     padding: 50px 20px;
     color: white;
     text-align: center;
+    margin-top: -70px;
   }
   
   .apresentacao-2 {
@@ -76,6 +77,19 @@
     background: #ffbe33;
   }
   
+  .logo-2 {
+    animation: rota 3s infinite;
+  }
+
+  @keyframes rota {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
   /* Responsividade */
   @media (max-width: 768px) {
     .apresentacao {

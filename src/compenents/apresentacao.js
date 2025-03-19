@@ -85,7 +85,7 @@ function Apresentacao() {
     <div className="apresentacao" id="tokenomics">
 
       <div className="apresentacao-2" id="tokenomics">
-        <img src={Img_logo} width='80px' className="logo"></img>
+        <img src={Img_logo} width='80px' className="logo logo-2"></img>
         <h2>$BullBear Token Presentation</h2>
         <p>
         BullBear emerges as a revolution in the world of cryptocurrencies, bringing an innovative project focused on exponential growth and the development of a solid and secure ecosystem for investors and traders. Our mission is to provide a dynamic and efficient environment for crypto asset trading, with strategic incentives to drive adoption and liquidity of our token.
