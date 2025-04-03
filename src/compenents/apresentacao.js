@@ -94,7 +94,7 @@ function Apresentacao() {
           <div className="caixa-2">
             <img src={Img_dolar} width="40"></img>
             <h2>MAX SUPPLY</h2>
-            <p>100B</p>
+            <p>1B</p>
           </div>
           <div className="caixa-2">
             <img src={Img_tax} width='40'></img>

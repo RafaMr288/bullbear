@@ -2,7 +2,7 @@ import { useState } from "react"
 import Img_paper from "../imgs/papel.png"
 import "./whitepaper.css"
 import { Link } from "react-router-dom"
-import pdfFile from "./bullbear.pdf"
+import pdfFile from "./whitepaper.pdf"
 
 function Whitepaper() {
 
