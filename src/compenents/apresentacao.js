@@ -99,7 +99,7 @@ function Apresentacao() {
           <div className="caixa-2">
             <img src={Img_tax} width='40'></img>
             <h2>TAX</h2>
-            <p>BUY 0/0 SELL</p>
+            <p>BUY 0,25% / 0,25% SELL</p>
           </div>
         </div>
         <div id="main" style={{ width: "100%", height: "400px", marginTop:"20px" }}></div>
